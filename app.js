@@ -44,7 +44,7 @@ app.post("/movies/", async (request, response) => {
 
   const addPlayerQuery = `
     INSERT INTO
-       movie(director_id.movie_name,lead_actor)
+       movie(director_id,movie_name,lead_actor)
     VALUES (
         '${directorId}',
         '${movieName}',
